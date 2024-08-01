@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cat ./directory_1/file_1
-      - run: cat ./directory_2/file_2
+      - run: cat directory_1/file_1
+      - run: cat directory_2/file_2
