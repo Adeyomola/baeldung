@@ -8,6 +8,7 @@ jobs:
     name: demo
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
           cd directory_1
           cat file_1
