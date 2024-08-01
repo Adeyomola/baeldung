@@ -1,0 +1,12 @@
+name: cd Command Demo
+on:
+  push:
+    branches:
+      - main
+jobs:
+  demo:
+    name: demo
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd directory_1 &amp;&amp; cat file_1
+      - run: cd directory_2 &amp;&amp; cat file_2
