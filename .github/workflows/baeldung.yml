@@ -8,5 +8,9 @@ jobs:
     name: demo
     runs-on: ubuntu-latest
     steps:
-      - run: cd directory_1 &amp;&amp; cat file_1
-      - run: cd directory_2 &amp;&amp; cat file_2
+      - run: |
+          cd directory_1
+          cat file_1
+      - run: |
+          cd directory_2
+          cat file_2
