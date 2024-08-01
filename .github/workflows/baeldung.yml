@@ -5,13 +5,11 @@ on:
       - main
 jobs:
   demo:
+    defaults:
+      - run: |
+          cd directory_1
     name: demo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          cd directory_1
-          cat file_1
-      - run: |
-          cd directory_2
-          cat file_2
+      - run: cat file_1
