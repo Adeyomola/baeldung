@@ -3,13 +3,28 @@ on:
   push:
     branches:
       - main
+defaults:
+  run:
+    working-directory: directory_3
+
 jobs:
-  demo:
-    name: demo
+  1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: cat file_1
-        working-directory: directory_1
+  2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - run: cat file_2
-        working-directory: directory_2
+  3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat file_3
+  4:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat file_4
