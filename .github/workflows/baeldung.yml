@@ -8,7 +8,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          subdirectory: directory_3
+          sparse-checkout: directory_3
       - run: cat file_4
