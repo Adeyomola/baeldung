@@ -7,10 +7,9 @@ jobs:
   demo:
     name: demo
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: directory_3
     steps:
       - uses: actions/checkout@v4
-      - run: cat file_3
-      - run: cat file_4
+      - run: cat file_1
+        working-directory: directory_1
+      - run: cat file_2
+        working-directory: directory_2
